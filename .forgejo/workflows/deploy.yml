@@ -1,0 +1,19 @@
+name: Deploy to Git Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+jobs:
+  publish:
+    runs-on: [native-x86_64-linux, bigger-parallel]
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - name: Build and push
+        run: |
+          nix build .# -L --accept-flake-config
+          nix run nixpkgs#git-pages-cli -- \
+            https://bart.pages.bartoostveen.nl/search.boostveen.nl \
+            --parents \
+            --token=${{ forge.token }} \
+            --upload-dir=result/
