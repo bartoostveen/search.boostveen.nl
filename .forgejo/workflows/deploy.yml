@@ -13,7 +13,7 @@ jobs:
         run: |
           nix build .# -L --accept-flake-config
           nix run nixpkgs#git-pages-cli -- \
-            https://bart.pages.bartoostveen.nl/search.boostveen.nl \
+            https://search.boostveen.nl \
             --parents \
             --token=${{ forge.token }} \
             --upload-dir=result/
