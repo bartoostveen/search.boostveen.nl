@@ -1,6 +1,18 @@
 {
   description = "search.boostveen.nl";
 
+  nixConfig = {
+    extra-substituters = [
+      "https://nix-community.cachix.org"
+      "https://attic.bartoostveen.nl/ixx"
+    ];
+    extra-trusted-public-keys = [
+      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+      "ixx:MCJOmZ6W4d8cRevKNuZKRIRJjmmQ+85iwqNzRdcx62g="
+    ];
+    always-allow-substitutes = true;
+  };
+
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-parts = {
@@ -111,6 +123,7 @@
           pkgs,
           self',
           inputs',
+          system,
           ...
         }:
 
@@ -121,6 +134,27 @@
 
           packages.default = pkgs.callPackage ./package.nix { inherit inputs inputs'; };
           packages.search = self'.packages.default;
+
+          packages.cache-ixx =
+            let
+              inherit (inputs.search.inputs.ixx.packages.${system}) ixx;
+            in
+            pkgs.writeShellApplication {
+              name = "cache";
+
+              runtimeInputs = [
+                pkgs.attic-client
+              ];
+
+              text = ''
+                if [[ -v ATTIC_TOKEN ]]; then
+                  attic login ixx-cache https://attic.bartoostveen.nl "$ATTIC_TOKEN"
+                  attic push ixx-cache:ixx ${ixx}
+                else
+                  attic push ixx ${ixx}
+                fi
+              '';
+            };
         };
     };
 }
