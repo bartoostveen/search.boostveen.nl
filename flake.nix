@@ -116,6 +116,7 @@
 
       imports = [
         inputs.treefmt-nix.flakeModule
+        ./pkgs.nix
       ];
 
       perSystem =
