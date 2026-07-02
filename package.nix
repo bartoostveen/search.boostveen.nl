@@ -116,10 +116,14 @@ inputs'.search.packages.mkMultiSearch {
       urlPrefix = "https://github.com/Mic92/sops-nix/blob/master/";
     }
     {
-      modules = [ inputs.vert-nix.nixosModules.default ];
+      modules = [
+        inputs.vert-nix.nixosModules.default
+        includePkgs
+      ];
       name = "vert-nix";
       pkgs = inputs'.vert-nix.packages;
       urlPrefix = "https://git.bartoostveen.nl/bart/vert-nix/src/branch/release/";
+      specialArgs.modulesPath = inputs.nixpkgs + "/nixos/modules";
     }
   ];
 }
