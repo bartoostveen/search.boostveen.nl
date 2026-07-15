@@ -27,6 +27,11 @@ inputs'.search.packages.mkMultiSearch {
       urlPrefix = "https://github.com/nix-community/authentik-nix/blob/main/";
     }
     {
+      name = "bart-packages";
+      pkgs = inputs'.bart-packages.packages;
+      urlPrefix = "https://git.bartoostveen.nl/bart/nix-packages/src/branch/release/";
+    }
+    {
       modules = [ inputs.comin.nixosModules.comin ];
       name = "comin";
       pkgs = inputs'.comin.packages;

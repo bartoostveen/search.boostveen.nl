@@ -37,6 +37,15 @@
 
     # Search scopes
 
+    bart-packages = {
+      url = "git+https://git.bartoostveen.nl/bart/nix-packages.git";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        treefmt-nix.follows = "treefmt-nix";
+        flake-parts.follows = "flake-parts";
+      };
+    };
+
     authentik-nix = {
       url = "github:nix-community/authentik-nix";
       inputs = {
