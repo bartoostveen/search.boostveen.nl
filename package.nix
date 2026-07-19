@@ -6,10 +6,11 @@
   jq,
   runCommand,
   pkgs,
+  stdenv,
 }:
 
 let
-  inherit (lib) getExe;
+  inherit (lib) getExe attrValues;
 
   includePkgs = {
     _module.args = { inherit pkgs; };
@@ -48,6 +49,23 @@ inputs'.search.packages.mkMultiSearch {
       pkgs = inputs'.disko.packages;
       specialArgs.modulesPath = inputs.nixpkgs + "/nixos/modules";
       urlPrefix = "https://github.com/nix-community/disko/blob/master/";
+    }
+    {
+      modules = (attrValues inputs.hydra.nixosModules) ++ [
+        {
+          _module.args.pkgs = import inputs.nixpkgs {
+            config.allowUnfree = true;
+            inherit (stdenv.hostPlatform) system;
+            overlays = [
+              inputs.hydra.overlays.default
+              (_: _: { flakePackages = inputs'.hydra.packages; })
+            ];
+          };
+        }
+      ];
+      name = "hydra";
+      pkgs = inputs'.hydra.packages;
+      urlPrefix = "https://github.com/NixOS/hydra/blob/master/";
     }
     {
       optionsJSON =
