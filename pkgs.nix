@@ -10,6 +10,7 @@
       config.allowUnfree = true;
       overlays = [
         inputs.vert-nix.overlays.default
+        inputs.bart-packages.overlays.default
       ];
     };
   };
