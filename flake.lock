@@ -62,11 +62,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785183706,
-        "narHash": "sha256-I9+QTIchFd83e6X8crjzyoL4gDQG8/hkDAghYklf1xI=",
+        "lastModified": 1785271720,
+        "narHash": "sha256-/sguPQS+CB+y6NCOkZKHXyHnklobok/U9zzF++TbaTA=",
         "ref": "refs/heads/master",
-        "rev": "af4dc42883c466bc2ade84344ad7227f473e63fa",
-        "revCount": 39,
+        "rev": "4204c796794a3c3c4c3eeaa9338951bb6b766578",
+        "revCount": 47,
         "type": "git",
         "url": "https://git.bartoostveen.nl/bart/nix-packages.git"
       },
@@ -311,11 +311,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785168662,
-        "narHash": "sha256-kGJTc0oEUQuEwV66lSlMxYtOEtpk9N/HS43k+rFAvs8=",
+        "lastModified": 1785269816,
+        "narHash": "sha256-6JkNDlJ18NY1iAuoSYCPDO7O+yYN/vPwpFmHOHNpVvY=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "cbb77679b3d992c8b62f884cd3a84af534a28621",
+        "rev": "3d25fa94cf355cf7da64c77bb9c3c15806486329",
         "type": "github"
       },
       "original": {
@@ -337,11 +337,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1784223924,
-        "narHash": "sha256-aLoklefjR3NGGAgVArBwlC/7mcH9Z0zgUQfIoq9G7EA=",
+        "lastModified": 1785260963,
+        "narHash": "sha256-M6CW0tFhZAwKjRjB0VOwcOUP+GlxOTFSl3UKd4mMZPA=",
         "owner": "NixOS",
         "repo": "hydra",
-        "rev": "c5e3a66c668a1c9858e1d8e9b22db7ffb9b9a6e0",
+        "rev": "8f7a4c43e11f6c44b3ceaed58b37fce3655f4346",
         "type": "github"
       },
       "original": {
@@ -618,11 +618,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785189803,
-        "narHash": "sha256-wQZdfwBzLAynNTkUhhdZ0lrEXmre+hh3xhTiKGxEjWg=",
+        "lastModified": 1785242276,
+        "narHash": "sha256-sJI/6nAkckPii1HUCNj4XwPV6E7CZ9t75WX/XQvSyG8=",
         "owner": "simple-nixos-mailserver",
         "repo": "nixos-mailserver",
-        "rev": "5b71a609d46ede98ac0df2f6dc8b6842bbe46262",
+        "rev": "d4165c1dc93aa7bb3019e5a90960c121e228cad5",
         "type": "gitlab"
       },
       "original": {
