@@ -31,7 +31,7 @@ inputs'.search.packages.mkMultiSearch {
       name = "bart-packages";
       pkgs = inputs'.bart-packages.packages;
       modules = attrValues inputs.bart-packages.nixosModules ++ [ includePkgs ];
-      urlPrefix = "https://git.bartoostveen.nl/bart/nix-packages/src/branch/release/";
+      urlPrefix = "https://git.bartoostveen.nl/bart/nix-packages/src/branch/master/";
     }
     {
       modules = [ inputs.comin.nixosModules.comin ];
