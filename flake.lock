@@ -199,6 +199,32 @@
         "type": "github"
       }
     },
+    "dtomvan-nur-packages": {
+      "inputs": {
+        "flake-parts": [
+          "flake-parts"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "treefmt-nix": [
+          "treefmt-nix"
+        ]
+      },
+      "locked": {
+        "lastModified": 1786040294,
+        "narHash": "sha256-MCj0fa+rsxAW1OxVc3t+XNENW7Vp6/7KfSUd7qtbZV8=",
+        "owner": "dtomvan",
+        "repo": "nur-packages",
+        "rev": "1f2a3114e5479dcd7b2a7669451436442bdb052c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dtomvan",
+        "repo": "nur-packages",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -586,6 +612,7 @@
         "comin": "comin",
         "copyparty": "copyparty",
         "disko": "disko",
+        "dtomvan-nur-packages": "dtomvan-nur-packages",
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
         "home-manager": "home-manager",

@@ -52,6 +52,11 @@ inputs'.search.packages.mkMultiSearch {
       urlPrefix = "https://github.com/nix-community/disko/blob/master/";
     }
     {
+      name = "dtomvan-nur-packages";
+      pkgs = inputs'.dtomvan-nur-packages.packages;
+      urlPrefix = "https://github.com/dtomvan/nur-packages/blob/hovudstraum/";
+    }
+    {
       modules = (attrValues inputs.hydra.nixosModules) ++ [
         {
           _module.args.pkgs = import inputs.nixpkgs {
