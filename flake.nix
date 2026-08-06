@@ -74,6 +74,14 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    dtomvan-nur-packages = {
+      url = "github:dtomvan/nur-packages";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        treefmt-nix.follows = "treefmt-nix";
+        flake-parts.follows = "flake-parts";
+      };
+    };
     hydra = {
       url = "github:NixOS/hydra";
       inputs = {
