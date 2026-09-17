@@ -97,6 +97,7 @@
       url = "github:Cisien/meshcoretomqtt";
       inputs = {
         nixpkgs.follows = "nixpkgs";
+        flake-parts.follows = "flake-parts";
         flake-utils.follows = "flake-utils";
         treefmt-nix.follows = "treefmt-nix";
       };
@@ -122,6 +123,10 @@
         flake-compat.follows = "";
         nixpkgs.follows = "nixpkgs";
       };
+    };
+    steamcmd-servers = {
+      url = "github:ALH477/steamcmd-servers";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     sops-nix = {
       url = "github:Mic92/sops-nix";

@@ -20,11 +20,11 @@
         "uv2nix": "uv2nix"
       },
       "locked": {
-        "lastModified": 1788820723,
-        "narHash": "sha256-NIqHasKysUniYrJozavASUF4MqpsyBg7lZZNtM+WrwI=",
+        "lastModified": 1789662015,
+        "narHash": "sha256-CveW/4U/zNIRfLpH6vMv8qisfotft8XJC47KqAhViZ0=",
         "owner": "nix-community",
         "repo": "authentik-nix",
-        "rev": "fd34a5238314351ed92dd79d00f518b8a03e19cb",
+        "rev": "9a176c0a1889921f3ed19d29a047bafaf20b9a24",
         "type": "github"
       },
       "original": {
@@ -36,16 +36,16 @@
     "authentik-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1788268887,
-        "narHash": "sha256-069RXUkk4aSYVelezdmYM70TGIJM8KyTBrLW3Vv0XdM=",
+        "lastModified": 1788978241,
+        "narHash": "sha256-tAdDYHIur6ewVZlRz6JPtLivqctYLLtD0S8uehuuxSM=",
         "owner": "goauthentik",
         "repo": "authentik",
-        "rev": "b4de7336e903ef51febf42c0ff3b57c484866cdc",
+        "rev": "dce85a5b64a429206199e9ffddc602060643f17a",
         "type": "github"
       },
       "original": {
         "owner": "goauthentik",
-        "ref": "version/2026.8.1",
+        "ref": "version/2026.8.2",
         "repo": "authentik",
         "type": "github"
       }
@@ -63,11 +63,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789462204,
-        "narHash": "sha256-im0pPC7HuNKWTsQ1RNoBoci8XK82C8m3RqAe4m7TJBs=",
+        "lastModified": 1789559725,
+        "narHash": "sha256-57B2WcypzO9jB89c/6XPjuQHL1GmD/2Qe7q99Z9ml9w=",
         "ref": "refs/heads/master",
-        "rev": "b0642825bbbf8e96844b41ffa372c894eceaff8f",
-        "revCount": 198,
+        "rev": "be82fe8c87d22c67e892dada5e53f52681a98a33",
+        "revCount": 202,
         "type": "git",
         "url": "https://git.bartoostveen.nl/bart/nix-packages.git"
       },
@@ -94,7 +94,7 @@
     },
     "bun2nix": {
       "inputs": {
-        "flake-parts": "flake-parts_3",
+        "flake-parts": "flake-parts_2",
         "nixpkgs": [
           "vert-nix",
           "nixpkgs"
@@ -143,11 +143,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1787549241,
-        "narHash": "sha256-DoJkxpIWIOBkrHBpmZUDBhguJlt6vOo3KuUIq7zOHjw=",
+        "lastModified": 1789590655,
+        "narHash": "sha256-SIRSbD797dA/tci1CvBUIxw0nGdTmOzKqjqwUaHROtU=",
         "owner": "nlewo",
         "repo": "comin",
-        "rev": "ffeadf34d3daba1790d4dcc810c1ab301178e752",
+        "rev": "9d59ca42831cde4050736ab478e3f8db85f7e75f",
         "type": "github"
       },
       "original": {
@@ -166,11 +166,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788840090,
-        "narHash": "sha256-X9esxhmOHPuDC65S2g3qfR+YlJsDvWp6UXzVLkzRp7I=",
+        "lastModified": 1789598303,
+        "narHash": "sha256-hyAB8PqtE+2NPbXqFWFOVessao4ccpsQq6hKBfZPN0w=",
         "owner": "9001",
         "repo": "copyparty",
-        "rev": "bfc3cff8482a70653ad380bd94660013d2569ff5",
+        "rev": "6867ccc51181e7965445c3d158ddddf9a8fd817e",
         "type": "github"
       },
       "original": {
@@ -262,23 +262,6 @@
     },
     "flake-parts_2": {
       "inputs": {
-        "nixpkgs-lib": "nixpkgs-lib"
-      },
-      "locked": {
-        "lastModified": 1788450739,
-        "narHash": "sha256-glZLQlzIn1fXH6PazR2iUmTo7kzzyYSshrWhLS9TqCU=",
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "rev": "31729ca8cbdb4fa927b34e5f4353e6a83f39e993",
-        "type": "github"
-      },
-      "original": {
-        "id": "flake-parts",
-        "type": "indirect"
-      }
-    },
-    "flake-parts_3": {
-      "inputs": {
         "nixpkgs-lib": [
           "vert-nix",
           "bun2nix",
@@ -369,11 +352,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789430117,
-        "narHash": "sha256-t+U1mijItLJ64xZOifpfQ17kpAL73nU7pDI48ScacVc=",
+        "lastModified": 1789652175,
+        "narHash": "sha256-OVgwnH7e/GlJRscTPXnJ8wwy6Mh+hk0MedEw360o8U8=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "cda90fd8838825c689fde9d3f3b4e937937790df",
+        "rev": "f2785222a14e90f8c5ad2ff62474ce88453c3421",
         "type": "github"
       },
       "original": {
@@ -437,7 +420,9 @@
     },
     "meshcoretomqtt": {
       "inputs": {
-        "flake-parts": "flake-parts_2",
+        "flake-parts": [
+          "flake-parts"
+        ],
         "flake-utils": [
           "flake-utils"
         ],
@@ -519,32 +504,17 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1789286504,
-        "narHash": "sha256-eiEK7cKZORNEvX0GeF3RtNEF/JXhgf2RqSp3230q13E=",
+        "lastModified": 1789546076,
+        "narHash": "sha256-zVxLZiSnmaaPLwnhj7pwmqe3axBg/C6nG5JZsJMh2g4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "ef34387ddd751e1ab8857adf4676492d32eb24ec",
+        "rev": "b1b875982b17dabde9b4a37f3e229e74913e6db3",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs-lib": {
-      "locked": {
-        "lastModified": 1788057806,
-        "narHash": "sha256-DTQSMxzDWmT0zhguthvegnVkn7CFqGCv4IHCzk5ZUpM=",
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "rev": "596e2e3940e09b2abbeb03f75fa1828c57fcd72c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
         "type": "github"
       }
     },
@@ -639,6 +609,7 @@
         "search": "search",
         "simple-nixos-mailserver": "simple-nixos-mailserver",
         "sops-nix": "sops-nix",
+        "steamcmd-servers": "steamcmd-servers",
         "treefmt-nix": "treefmt-nix",
         "vert-nix": "vert-nix"
       }
@@ -708,6 +679,26 @@
       "original": {
         "owner": "Mic92",
         "repo": "sops-nix",
+        "type": "github"
+      }
+    },
+    "steamcmd-servers": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1789050519,
+        "narHash": "sha256-a/fr9Dk9GoUB8gad3B82ytjvgKMzOycQDiV0LyOSYlo=",
+        "owner": "ALH477",
+        "repo": "steamcmd-servers",
+        "rev": "0ff96fc13a6908b42e1bc57a23d104837fd10089",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ALH477",
+        "repo": "steamcmd-servers",
         "type": "github"
       }
     },
