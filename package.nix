@@ -52,6 +52,12 @@ inputs'.search.packages.mkMultiSearch {
       urlPrefix = "https://github.com/nix-community/disko/blob/master/";
     }
     {
+      modules = [ inputs.dns-nix.nixosModules.default ];
+      name = "dns.nix";
+      specialArgs.modulesPath = inputs.nixpkgs + "/nixos/modules";
+      urlPrefix = "https://github.com/nix-community/dns.nix/blob/master/";
+    }
+    {
       name = "dtomvan-nur-packages";
       pkgs = inputs'.dtomvan-nur-packages.packages;
       urlPrefix = "https://github.com/dtomvan/nur-packages/blob/hovudstraum/";
@@ -143,6 +149,12 @@ inputs'.search.packages.mkMultiSearch {
       name = "sops-nix";
       pkgs = inputs'.sops-nix.packages;
       urlPrefix = "https://github.com/Mic92/sops-nix/blob/master/";
+    }
+    {
+      modules = [ inputs.steamcmd-servers.nixosModules.default ];
+      name = "steamcmd-servers";
+      pkgs = inputs'.steamcmd-servers.packages;
+      urlPrefix = "https://github.com/kagurazaka-ayano/steamcmd-servers/blob/main/";
     }
     {
       modules = [

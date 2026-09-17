@@ -74,6 +74,10 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    dns-nix = {
+      url = "github:nix-community/dns.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     dtomvan-nur-packages = {
       url = "github:dtomvan/nur-packages";
       inputs = {
@@ -125,6 +129,10 @@
     };
     sops-nix = {
       url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    steamcmd-servers = {
+      url = "github:kagurazaka-ayano/steamcmd-servers";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     vert-nix = {
