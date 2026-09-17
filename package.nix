@@ -145,6 +145,15 @@ inputs'.search.packages.mkMultiSearch {
       urlPrefix = "https://github.com/Mic92/sops-nix/blob/master/";
     }
     {
+      name = "steamcmd-servers";
+      pkgs = inputs'.steamcmd-servers.packages;
+      urlPrefix = "https://github.com/ALH477/steamcmd-servers/blob/main/";
+      modules = [
+        inputs.steamcmd-servers.nixosModules.default
+        includePkgs
+      ];
+    }
+    {
       modules = [
         inputs.vert-nix.nixosModules.default
         includePkgs

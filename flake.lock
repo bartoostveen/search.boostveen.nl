@@ -609,6 +609,7 @@
         "search": "search",
         "simple-nixos-mailserver": "simple-nixos-mailserver",
         "sops-nix": "sops-nix",
+        "steamcmd-servers": "steamcmd-servers",
         "treefmt-nix": "treefmt-nix",
         "vert-nix": "vert-nix"
       }
@@ -678,6 +679,26 @@
       "original": {
         "owner": "Mic92",
         "repo": "sops-nix",
+        "type": "github"
+      }
+    },
+    "steamcmd-servers": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1789050519,
+        "narHash": "sha256-a/fr9Dk9GoUB8gad3B82ytjvgKMzOycQDiV0LyOSYlo=",
+        "owner": "ALH477",
+        "repo": "steamcmd-servers",
+        "rev": "0ff96fc13a6908b42e1bc57a23d104837fd10089",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ALH477",
+        "repo": "steamcmd-servers",
         "type": "github"
       }
     },

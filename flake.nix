@@ -124,6 +124,10 @@
         nixpkgs.follows = "nixpkgs";
       };
     };
+    steamcmd-servers = {
+      url = "github:ALH477/steamcmd-servers";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     sops-nix = {
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
