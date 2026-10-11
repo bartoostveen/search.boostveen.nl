@@ -118,7 +118,7 @@
     #   };
     # };
     simple-nixos-mailserver = {
-      url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
+      url = "git+https://git.bartoostveen.nl/mirror/nixos-mailserver.git";
       inputs = {
         flake-compat.follows = "";
         nixpkgs.follows = "nixpkgs";
