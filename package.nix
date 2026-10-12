@@ -87,14 +87,6 @@ inputs'.search.packages.mkMultiSearch {
       urlPrefix = "https://github.com/nix-community/home-manager/tree/master/";
     }
     {
-      modules = [
-        inputs.meshcoretomqtt.nixosModules.default
-        includePkgs
-      ];
-      name = "Meshcore to MQTT";
-      urlPrefix = "https://github.com/Cisien/meshcoretomqtt/blob/main/";
-    }
-    {
       name = "plasma-manager";
       urlPrefix = "https://github.com/nix-community/plasma-manager/blob/main/";
       optionsJSON =

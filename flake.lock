@@ -400,35 +400,6 @@
         "type": "github"
       }
     },
-    "meshcoretomqtt": {
-      "inputs": {
-        "flake-parts": [
-          "flake-parts"
-        ],
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "treefmt-nix": [
-          "treefmt-nix"
-        ]
-      },
-      "locked": {
-        "lastModified": 1784244584,
-        "narHash": "sha256-jeXqA24sYTuDhPJHl05PuKD9TvhMi/Bju9zVXCv4d7M=",
-        "owner": "Cisien",
-        "repo": "meshcoretomqtt",
-        "rev": "0cb527f3bb580aa02653aa3e8122ac4cf1929a09",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Cisien",
-        "repo": "meshcoretomqtt",
-        "type": "github"
-      }
-    },
     "nix": {
       "flake": false,
       "locked": {
@@ -585,7 +556,6 @@
         "flake-utils": "flake-utils",
         "home-manager": "home-manager",
         "hydra": "hydra",
-        "meshcoretomqtt": "meshcoretomqtt",
         "nixpkgs": "nixpkgs",
         "plasma-manager": "plasma-manager",
         "search": "search",
