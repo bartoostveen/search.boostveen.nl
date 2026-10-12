@@ -161,8 +161,12 @@
             programs.nixfmt.enable = true;
           };
 
-          packages.default = pkgs.callPackage ./package.nix { inherit inputs inputs'; };
-          packages.search = self'.packages.default;
+          checks = { inherit (self'.packages) search; };
+
+          packages = {
+            default = pkgs.callPackage ./package.nix { inherit inputs inputs'; };
+            search = self'.packages.default;
+          };
 
           packages.cache-ixx =
             let
