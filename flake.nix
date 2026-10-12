@@ -93,15 +93,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    meshcoretomqtt = {
-      url = "github:Cisien/meshcoretomqtt";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-parts.follows = "flake-parts";
-        flake-utils.follows = "flake-utils";
-        treefmt-nix.follows = "treefmt-nix";
-      };
-    };
     plasma-manager = {
       url = "github:nix-community/plasma-manager";
       inputs = {
@@ -170,8 +161,12 @@
             programs.nixfmt.enable = true;
           };
 
-          packages.default = pkgs.callPackage ./package.nix { inherit inputs inputs'; };
-          packages.search = self'.packages.default;
+          checks = { inherit (self'.packages) search; };
+
+          packages = {
+            default = pkgs.callPackage ./package.nix { inherit inputs inputs'; };
+            search = self'.packages.default;
+          };
 
           packages.cache-ixx =
             let
