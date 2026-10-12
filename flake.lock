@@ -63,11 +63,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791679402,
-        "narHash": "sha256-S7QfFOMW6JJU5dCdXy4J83/a3UMPZ1zaDVr17zR84go=",
+        "lastModified": 1791814632,
+        "narHash": "sha256-+8ZbGQyDcDL50kJYc4/XWt1qMb18C1YzR5HfLCIGqoQ=",
         "ref": "refs/heads/master",
-        "rev": "fd75d7f220667c4a3c557ded611f609e3a394a49",
-        "revCount": 267,
+        "rev": "57ce13c5fee8aedd4868ba1d1910442f1aced6fe",
+        "revCount": 275,
         "type": "git",
         "url": "https://git.bartoostveen.nl/bart/nix-packages.git"
       },
@@ -361,11 +361,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791473665,
-        "narHash": "sha256-or1nAWkxlPbKegdarYmXKjQfNixpxb4Dlrbp2jrUDdk=",
+        "lastModified": 1791704818,
+        "narHash": "sha256-CVxFt1uOBCbV2FoJLGgl5OQj/VvI3Ur6qCy8lH8AJVI=",
         "owner": "NixOS",
         "repo": "hydra",
-        "rev": "35d9058fa00edcc9c4a1d3489f929a9cbfc75208",
+        "rev": "a41de80392337214a77a46e153943b744cbd9134",
         "type": "github"
       },
       "original": {
@@ -651,11 +651,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791639265,
-        "narHash": "sha256-51gxD0eLcJkxH2TYdhE+Qsf04yg3PRV7anCAqOFX70E=",
+        "lastModified": 1791710405,
+        "narHash": "sha256-mVD4XIc5JkqMW2K04IkFUzHgHmyJZlzw5ktfgMDCbKU=",
         "owner": "Mic92",
         "repo": "sops-nix",
-        "rev": "a8be3b14935d3532604c51c8dfe3021c73d1a885",
+        "rev": "ee48786c6f9160d2c1a084aac841f68195b8420c",
         "type": "github"
       },
       "original": {
