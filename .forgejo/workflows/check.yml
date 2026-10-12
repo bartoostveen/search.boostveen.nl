@@ -17,4 +17,4 @@ jobs:
           nix-github-token: ${{ secrets.NIX_GITHUB_TOKEN }}
 
       - run: nix fmt -L --accept-flake-config -- --ci
-      - run: nix flake check -L --accept-flake-config
+      - run: nix flake check --abort-on-warn -L --accept-flake-config
